@@ -8,6 +8,7 @@
     --link-bg-color-hover: rgba(255, 255, 255, 0.05);
     --social-hover: rgba(255, 255, 255, 0.2);
     --footer-hover: rgb(194, 193, 193);
+    --switch-bg: url(./assets/moon.svg) 
 }
 
 * {
@@ -30,6 +31,7 @@ body {
     --link-bg-color-hover: rgba(0, 0, 0, 0.02);
     --social-hover: rgba(0, 0, 0, 0.1);
     --footer-hover: rgb(75, 75, 75);
+    --switch-bg: url(./assets/sun.svg);
 }
 
 main {
@@ -44,7 +46,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    margin-top: 3.5rem;
+    margin: 3.5rem 0 1.5rem 0;
 }
 
 .profile img {
@@ -53,6 +55,41 @@ main {
 
 .profile p {
     font-weight: 500;
+}
+
+.switch {
+    position: relative;
+    width: 4rem;
+    margin: 0.25rem auto;
+}
+
+.switch button {
+    width: 2rem;
+    height: 2rem;
+    background: #fff var(--switch-bg) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.light .switch button {
+    right: 0;
+    left: initial;
+}
+
+.switch span {
+    display: block;
+    width: 4rem;
+    height: 1.5rem;
+    background: var(--social-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 6.2rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .links {
