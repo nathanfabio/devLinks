@@ -3,7 +3,7 @@
 Built together with Rocketseat.
 #
 
-Click <a href="https://nathanfabio.github.io/devlinks/">here</a> to access!
+Click <a href="https://nathanfabio.github.io/devLinks/">here</a> to access!
 #
 
 ## Screenshots
