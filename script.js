@@ -6,8 +6,8 @@ toggleBtn.addEventListener('click', () => {
     body.classList.toggle('light');
 
     if (body.classList.contains('light')) {
-        img.setAttribute('src', "./assets/avatar-light.png")
+        img.setAttribute('src', "./assets/Avatar-light.png")
     } else {
-        img.setAttribute('src', "./assets/avatar.png")
+        img.setAttribute('src', "./assets/Avatar.png")
     }
 })
