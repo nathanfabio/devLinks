@@ -83,6 +83,10 @@ main {
     animation: switch-slide-light .2s forwards;
 }
 
+.switch button:hover {
+    outline: .5rem solid var(--link-bg-color);
+}
+
 .switch span {
     display: block;
     width: 4rem;
