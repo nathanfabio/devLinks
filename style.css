@@ -35,7 +35,8 @@ body {
 }
 
 main {
-    width: 22.5rem;
+    width: 100%;
+    max-width: 36.75rem;
     margin: auto;
     padding: 1.5rem;
 }
