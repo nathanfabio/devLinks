@@ -76,11 +76,11 @@ main {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    animation: switch-slide-dark .2s;
 }
 
 .light .switch button {
-    right: 0;
-    left: initial;
+    animation: switch-slide-light .2s forwards;
 }
 
 .switch span {
@@ -174,5 +174,25 @@ footer a:hover {
 
     .light {
         --bg-img: url(./assets/background/desktop-light.jpg);
+    }
+}
+
+@keyframes switch-slide-light {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes switch-slide-dark {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
     }
 }
